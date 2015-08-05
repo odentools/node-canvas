@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Automattic/node-canvas",
   "repository": "git://github.com/Automattic/node-canvas.git",
   "scripts": {
+    "preinstall": "node pre-package-install.js && node-gyp rebuild",
     "test": "make test"
   },
   "dependencies": {
